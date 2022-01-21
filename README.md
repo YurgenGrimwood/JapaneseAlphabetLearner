@@ -19,7 +19,11 @@ npm run build
 ```
 Builds, and rebuilds on change:
 ```bash
-npm dev
+npm start
+```
+Builds, and rebuilds on change, but dev, i guess  :shrug: :
+```bash
+npm run dev
 ```
 
 ## Final comments

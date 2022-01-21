@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "cpx -C public/** public/** && rollup -c && cpx extension/**/*.* public",
+    "start": "sirv public --no-clear",
     "dev": "rollup -c -w"
   },
   "devDependencies": {
