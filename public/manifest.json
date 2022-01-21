@@ -1,13 +1,10 @@
 {
-  "name": "KaniTrainer",
+  "name": "JapaneseLearner",
   "version": "1.0",
-  "description": "Chrome extension to train kanji",
-  "permissions": ["activeTab", "alarms", "storage"],
+  "description": "Chrome extension to train kanji, hiragana and katakana",
+  "permissions": ["storage"],
   "browser_action": {
     "default_popup": "popup.html"
   },
-  "manifest_version": 2,
-  "background": {
-    "scripts": ["build/background.js"]
-  }
+  "manifest_version": 2
 }
