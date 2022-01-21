@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "cpx -C public/** public/** && rollup -c && cpx extension/**/*.* public",
-    "dev": "rollup -c -w",
+    "dev": "rollup -c -w"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
