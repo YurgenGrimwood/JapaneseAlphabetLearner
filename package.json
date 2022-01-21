@@ -5,7 +5,6 @@
   "scripts": {
     "build": "cpx -C public/** public/** && rollup -c && cpx extension/**/*.* public",
     "dev": "rollup -c -w",
-    "start": "sirv public --no-clear"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
