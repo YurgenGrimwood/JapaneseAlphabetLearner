@@ -26,9 +26,11 @@ Builds, and rebuilds on change, but dev, i guess  :shrug: :
 npm run dev
 ```
 
-Builds the files for the application:
+Builds the japanese files for the application:
 ```bash
+. venv/Scripts/activate
 python3 main.py
+deactivate
 ```
 
 ## Final comments
