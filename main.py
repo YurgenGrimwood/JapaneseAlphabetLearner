@@ -72,6 +72,10 @@ def fix_hira():
     hiraTable["Hiragana"] = hiraTable["Hiragana"].str.strip()
     hiraTable["Readings"] = hiraTable["Readings"].str.strip()
     hiraTable["Readings"] = hiraTable["Readings"].str.replace(",", "、 ")
+    hiraTable = hiraTable.drop(index=5)
+    hiraTable = hiraTable.drop(index=6)
+    hiraTable = hiraTable.drop(index=7)
+    hiraTable = hiraTable.reset_index(drop=True)
     hiraTable.to_csv("public/Hiragana.csv", index=False)
 
 
