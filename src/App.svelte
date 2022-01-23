@@ -226,7 +226,7 @@
         let readings = []
         let readingIndex = index
         while (readings.length < Math.min(6, hiraganaList.length)) {
-            let englishMeaning = hiraganaList[readingIndex]["Reading"];
+            let englishMeaning = hiraganaList[readingIndex]["Readings"];
             if (!readings.some(option => option["value"] === englishMeaning)) {
                 readings.push({"value": englishMeaning, "selected": false})
             }
@@ -242,7 +242,7 @@
     }
 
     function GuessHiragana() {
-        if (hiraganaTrainObject.Hiragana["Reading"] === selectedHiragana) {
+        if (hiraganaTrainObject.Hiragana["Readings"] === selectedHiragana) {
             combo++
         } else {
             combo = 0
@@ -292,7 +292,7 @@
         let readings = []
         let readingIndex = index
         while (readings.length < Math.min(6, katakanaList.length)) {
-            let englishMeaning = katakanaList[readingIndex]["Reading"];
+            let englishMeaning = katakanaList[readingIndex]["Readings"];
             if (!readings.some(option => option["value"] === englishMeaning)) {
                 readings.push({"value": englishMeaning, "selected": false})
             }
@@ -324,7 +324,7 @@
 
 
     function GuessKatakana() {
-        if (katakanaTrainObject.Katakana["Reading"] === selectedKatakana) {
+        if (katakanaTrainObject.Katakana["Readings"] === selectedKatakana) {
             combo++
         } else {
             combo = 0
@@ -335,7 +335,7 @@
 
     function TextGuessKata(e) {
         if (!manualEnter) {
-            if (e.target.value + e.code.replace("Key", "").toLowerCase() === katakanaTrainObject.Katakana["Reading"].replace("(", "").replace(")", "")) {
+            if (e.target.value + e.code.replace("Key", "").toLowerCase() === katakanaTrainObject.Katakana["Readings"].replace("(", "").replace(")", "")) {
                 e.preventDefault()
                 combo++
                 selectedKatakana = ""
@@ -344,7 +344,7 @@
             }
         }
         if (e.code === "Space") {
-            if (e.target.value === katakanaTrainObject.Katakana["Reading"].replace("(", "").replace(")", "")) {
+            if (e.target.value === katakanaTrainObject.Katakana["Readings"].replace("(", "").replace(")", "")) {
                 combo++
             } else {
                 combo = 0
@@ -358,7 +358,7 @@
 
     function TextGuessHira(e) {
         if (!manualEnter) {
-            if (e.target.value + e.code.replace("Key", "").toLowerCase() === hiraganaTrainObject.Hiragana["Reading"].replace("(", "").replace(")", "")) {
+            if (e.target.value + e.code.replace("Key", "").toLowerCase() === hiraganaTrainObject.Hiragana["Readings"].replace("(", "").replace(")", "")) {
                 e.preventDefault()
                 combo++
                 selectedHiragana = ""
@@ -367,7 +367,7 @@
             }
         }
         if (e.code === "Space") {
-            if (e.target.value === hiraganaTrainObject.Hiragana["Reading"].replace("(", "").replace(")", "")) {
+            if (e.target.value === hiraganaTrainObject.Hiragana["Readings"].replace("(", "").replace(")", "")) {
                 combo++
             } else {
                 combo = 0

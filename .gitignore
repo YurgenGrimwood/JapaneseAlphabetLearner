@@ -1,6 +1,7 @@
 /node_modules/
 /public/
 /.idea/
+/venv/
 *.crx
 *.pem
 .DS_Store

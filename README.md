@@ -26,6 +26,11 @@ Builds, and rebuilds on change, but dev, i guess  :shrug: :
 npm run dev
 ```
 
+Builds the files for the application:
+```bash
+python3 main.py
+```
+
 ## Final comments
 
 This was mostly written between 1am and 8am on different days.
